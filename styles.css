@@ -30,12 +30,71 @@ body {
   transition: opacity 3s;
 }
 
+#audi {
+  background-image: url('images/audib.png');
+}
+
+#jag {
+  background-image: url('images/jagb.png');
+}
+
+#jeep {
+  background-image: url('images/jeepb.png');
+}
+
+#vw {
+  background-image: url('images/vwb.png');
+}
+
+#toyota {
+  background-image: url('images/toyotab.png');
+}
+
+#honda {
+  background-image: url('images/hondab.png');
+}
+
+#merc {
+  background-image: url('images/mercb.png');
+}
+
+#ford {
+  background-image: url('images/fordb.png');
+}
+
+#volvo {
+  background-image: url('images/volvob.png');
+}
+
+#marquis {
+  background-image: url('images/mercuryb.png');
+}
+
+#subaru {
+  background-image: url('images/subarub.png');
+}
+
+#miata {
+  background-image: url('images/mazdab.png');
+}
+
 /* Formatting for site elements to ensure consistency. */
 * {
   margin: 0;
       margin-right: 0px;
       margin-left: 0px;
   padding: 0;
+}
+
+.clicker {
+  width: 90px;
+  height: 90px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  opacity: .85;
+  text-decoration-color: transparent;
 }
 
 /* This section is concerned with the colors of nav text when interacted with. */
