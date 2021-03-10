@@ -16,6 +16,21 @@ const volvoobj = document.getElementById('volvo');
 const mercobj = document.getElementById('merc');
 const marquisobj = document.getElementById('marquis');
 
+const audirobj = document.getElementById('audirev');
+const fordrobj = document.getElementById('fordrev');
+const jagrobj =document.getElementById('jagrev');
+
+function stopAllAudio() {
+	audirobj.pause();
+	audirobj.currentTime = 0;
+	//
+	fordrobj.pause();
+	fordrobj.currentTime = 0;
+	//
+	jagrobj.pause();
+	jagrobj.currentTime = 0;
+  }
+
 const displayObj = document.getElementById('display');
 
 subaruobj.addEventListener('click', function (beej) {
@@ -116,12 +131,16 @@ function userPicked(whichOne) {
 			// display date range
 			// display description
 			// play sound
+			stopAllAudio()
+			audirobj.play();
 			break;
 		case 'jag':
 			displayObj.src = 'images/jag.png';
 			// display date range
 			// display description
 			// play sound
+			stopAllAudio()
+			jagrobj.play();
 			break;
 		case 'jeep':
 			displayObj.src = 'images/jeep.png';
@@ -158,6 +177,8 @@ function userPicked(whichOne) {
 			// display date range
 			// display description
 			// play sound
+			stopAllAudio()
+			fordrobj.play();
 			break;
 		case 'honda':
 			displayObj.src = 'images/honda.png';
@@ -222,5 +243,13 @@ userSubmitObj.addEventListener('click', function () {
   console.log('AstroSign is: ' + AstroSign);
 
   userPicked(AstroSign);
+
+  const modal = document.getElementById('modal');
+
+  const closeModalObj = document.getElementById('btn-modal-close');
+  closeModalObj.addEventListener('click', function() {
+	modal.hidden = !modal.hidden;
+	stopAllAudio();
+  });
 
 }); 
