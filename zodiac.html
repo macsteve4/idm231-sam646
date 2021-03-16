@@ -14,25 +14,52 @@
   <audio id="jagrev" src="sounds/jagrev.mp3" preload="auto"></audio>
 
     <body>
+    <div class="toplayout">
       <div class= "opener">
         <h1>
           Used Car Zodiac
         </h1>
       </div>
+
+      <div class= "howto">
+        <img src="images/howtoimg.png"/>
+      </div>
+    </div>
+
+<div class="zodiaclayout">
       <div class= "subflank">
         <h2>
           what used car do you think you'll be? enter your name and birthday to go and see!
         </h2>
+        <div class="userinfo">
+          <p><input id="fname" type="text" placeholder="first name"></p>
+          <p><input id="bday" type="date"></p>
+          <p><button id="userSubmit">Let's Go!</button></p>
+        </div>
       </div>
-      <br>
+
+      <div class="buttongrid">
+        <h3>Choose by brand...</h3>
+        <br>
+        <button class="clicker" id= "subaru"></button>
+        <button class="clicker" id= "vw"></button>
+        <button class="clicker" id= "miata"></button>
+        <button class="clicker" id= "honda"></button>
+        <button class="clicker" id= "jag"></button>
+        <button class="clicker" id= "toyota"></button>
+        <button class="clicker" id= "audi"></button>
+        <button class="clicker" id= "ford"></button>
+        <button class="clicker" id= "jeep"></button>
+        <button class="clicker" id= "volvo"></button>
+        <button class="clicker" id= "merc"></button>
+        <button class="clicker" id= "marquis"></button>
+      </div>
+
       <div class="carstage">
         <img src="images/used_background.png"/>
       </div>
-      <div class="userinfo">
-        <p><input id="fname" type="text" placeholder="first name"></p>
-        <p><input id="bday" type="date"></p>
-        <p><button id="userSubmit">Let's Go!</button></p>
-      </div>
+
+</div>
 
       <div id="modal" class="modal" hidden>
         <div class="modal-body">
@@ -50,34 +77,6 @@
         <div class="blanket"></div>
       </div>
 
-      <div>
-        <img id="display" src="images/car_stage.png" alt="empty stage">
-      </div>
-        <button class="clicker" id= "subaru"></button>
-        <button class="clicker" id= "vw"></button>
-        <button class="clicker" id= "miata"></button>
-        <button class="clicker" id= "honda"></button>
-        <button class="clicker" id= "jag"></button>
-        <button class="clicker" id= "toyota"></button>
-        <button class="clicker" id= "audi"></button>
-        <button class="clicker" id= "ford"></button>
-        <button class="clicker" id= "jeep"></button>
-        <button class="clicker" id= "volvo"></button>
-        <button class="clicker" id= "merc"></button>
-        <button class="clicker" id= "marquis"></button>
-        <div class= "howto">
-          <img src="images/howtoimg.png"/>
-        </div>
-              <footer>
-                <div class="bottom">
-                <a href="mailto:sam646@drexel.edu">
-                  <img class="stevenlink" alt="Link To Steven's Email" src="images/mail.png" width="26" height="19">
-                  </a>
-                <a href="https://www.linkedin.com/in/steven-mcinerney-3b106819a/" target="_blank">
-                  <img class="stevenlink" alt="Link To Steven's Email" src="images/linkedin.png" width="20" height="20">
-                  </a>
-                </div>
-        </footer>
         <script src="main.js"></script>
     </body>
 </html>

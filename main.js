@@ -105,14 +105,22 @@ volvoobj.addEventListener('click', function (beej) {
 	userPicked(idName);
 });
 
+const modal = document.getElementById('modal');
+
+const closeModalObj = document.getElementById('btn-modal-close');
+closeModalObj.addEventListener('click', function() {
+  modal.hidden = !modal.hidden;
+  stopAllAudio();
+});
+
 function userPicked(whichOne) {
 	console.log('User picked ' + whichOne);
 	switch (whichOne) {
 		case 'subaru':
 			// displayObj.src = 'img/ful_scorpio.png';
-			zDisplayObj.src = 'images/jag.png';
+			zDisplayObj.src = 'images/wrx.png';
 			// display title
-			zTitleObj.innerHTML = 'Jaguar XJ6';
+			zTitleObj.innerHTML = 'Subaru WRX';
 			// display date range
 			zDateRangeObj.innerHTML = '##-Month to ##-Month';
 			// display description
@@ -123,9 +131,9 @@ function userPicked(whichOne) {
 		  	break;
 		case 'vw':
 			// displayObj.src = 'img/ful_scorpio.png';
-			zDisplayObj.src = 'images/jag.png';
+			zDisplayObj.src = 'images/vw.png';
 			// display title
-			zTitleObj.innerHTML = 'Jaguar XJ6';
+			zTitleObj.innerHTML = 'Volkswagen Jetta';
 			// display date range
 			zDateRangeObj.innerHTML = '##-Month to ##-Month';
 			// display description
@@ -136,9 +144,9 @@ function userPicked(whichOne) {
 		  	break;  
 		case 'miata':
 			// displayObj.src = 'img/ful_scorpio.png';
-			zDisplayObj.src = 'images/jag.png';
+			zDisplayObj.src = 'images/miata.png';
 			// display title
-			zTitleObj.innerHTML = 'Jaguar XJ6';
+			zTitleObj.innerHTML = 'Mazda Miata';
 			// display date range
 			zDateRangeObj.innerHTML = '##-Month to ##-Month';
 			// display description
@@ -149,9 +157,9 @@ function userPicked(whichOne) {
 		  	break;
 		case 'audi':
 			// displayObj.src = 'img/ful_scorpio.png';
-			zDisplayObj.src = 'images/jag.png';
+			zDisplayObj.src = 'images/audi.png';
 			// display title
-			zTitleObj.innerHTML = 'Jaguar XJ6';
+			zTitleObj.innerHTML = 'Audi A6';
 			// display date range
 			zDateRangeObj.innerHTML = '##-Month to ##-Month';
 			// display description
@@ -179,9 +187,9 @@ function userPicked(whichOne) {
 			break;
 		case 'jeep':
 			// displayObj.src = 'img/ful_scorpio.png';
-			zDisplayObj.src = 'images/jag.png';
+			zDisplayObj.src = 'images/jeep.png';
 			// display title
-			zTitleObj.innerHTML = 'Jaguar XJ6';
+			zTitleObj.innerHTML = 'Jeep Rubicon';
 			// display date range
 			zDateRangeObj.innerHTML = '##-Month to ##-Month';
 			// display description
@@ -192,9 +200,9 @@ function userPicked(whichOne) {
 			break;
 		case 'marquis':
 			// displayObj.src = 'img/ful_scorpio.png';
-			zDisplayObj.src = 'images/jag.png';
+			zDisplayObj.src = 'images/marquis.png';
 			// display title
-			zTitleObj.innerHTML = 'Jaguar XJ6';
+			zTitleObj.innerHTML = 'Mercury Grand Marquis';
 			// display date range
 			zDateRangeObj.innerHTML = '##-Month to ##-Month';
 			// display description
@@ -205,9 +213,9 @@ function userPicked(whichOne) {
 			break;
 		case 'toyota':
 			// displayObj.src = 'img/ful_scorpio.png';
-			zDisplayObj.src = 'images/jag.png';
+			zDisplayObj.src = 'images/toyota.png';
 			// display title
-			zTitleObj.innerHTML = 'Jaguar XJ6';
+			zTitleObj.innerHTML = 'Toyota Camry';
 			// display date range
 			zDateRangeObj.innerHTML = '##-Month to ##-Month';
 			// display description
@@ -218,9 +226,9 @@ function userPicked(whichOne) {
 			break;
 		case 'volvo':
 			// displayObj.src = 'img/ful_scorpio.png';
-			zDisplayObj.src = 'images/jag.png';
+			zDisplayObj.src = 'images/volvo.png';
 			// display title
-			zTitleObj.innerHTML = 'Jaguar XJ6';
+			zTitleObj.innerHTML = 'Volvo S40';
 			// display date range
 			zDateRangeObj.innerHTML = '##-Month to ##-Month';
 			// display description
@@ -231,9 +239,9 @@ function userPicked(whichOne) {
 			break;
 		case 'merc':
 			// displayObj.src = 'img/ful_scorpio.png';
-			zDisplayObj.src = 'images/jag.png';
+			zDisplayObj.src = 'images/merc.png';
 			// display title
-			zTitleObj.innerHTML = 'Jaguar XJ6';
+			zTitleObj.innerHTML = 'Mercedes-Benz 300CE';
 			// display date range
 			zDateRangeObj.innerHTML = '##-Month to ##-Month';
 			// display description
@@ -246,7 +254,7 @@ function userPicked(whichOne) {
 			// displayObj.src = 'img/ful_scorpio.png';
 			zDisplayObj.src = 'images/ford.png';
 			// display title
-			zTitleObj.innerHTML = 'Jaguar XJ6';
+			zTitleObj.innerHTML = 'Ford Ranger';
 			// display date range
 			zDateRangeObj.innerHTML = '##-Month to ##-Month';
 			// display description
@@ -261,7 +269,7 @@ function userPicked(whichOne) {
 			// displayObj.src = 'img/ful_scorpio.png';
 			zDisplayObj.src = 'images/honda.png';
 			// display title
-			zTitleObj.innerHTML = 'Jaguar XJ6';
+			zTitleObj.innerHTML = 'Honda Odyssey';
 			// display date range
 			zDateRangeObj.innerHTML = '##-Month to ##-Month';
 			// display description
@@ -333,13 +341,5 @@ userSubmitObj.addEventListener('click', function () {
   console.log('AstroSign is: ' + AstroSign);
 
   userPicked(AstroSign);
-
-  const modal = document.getElementById('modal');
-
-  const closeModalObj = document.getElementById('btn-modal-close');
-  closeModalObj.addEventListener('click', function() {
-	modal.hidden = !modal.hidden;
-	stopAllAudio();
-  });
 
 }); 

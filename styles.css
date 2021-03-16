@@ -86,22 +86,51 @@ body {
   padding: 0;
 }
 
+.toplayout {
+  display: grid;
+  grid-template-areas:
+  'title help';
+}
+
 h1 {
   margin: 1.5rem;
+}
+
+.zodiaclayout {
+  display: grid;
+  grid-template-areas:
+  'menu main main main main right'
+  'menu main main main main right';
+  grid-gap: 10px;
+  padding: 10px;
 }
 
 h2 {
   max-width: 300px;
   text-align: left;
   margin-right: 1.5em;
-  margin-left: 2em;
+  margin-left: 1.5em;
   margin-top: 1em;
+  margin-bottom: 3em;
+}
+
+h3 {
+  font-family: 'Lato';
 }
 
 .opener {
   text-align: left;
   font-family: "Quattrocento Sans";
   font-size: 21px;
+  grid-area: title;
+}
+
+.howto {
+  float: right;
+  grid-area: help;
+  align-self: center;
+  justify-self: right;
+  padding-right: 1em;
 }
 
 .subflank {
@@ -109,16 +138,27 @@ h2 {
   font-family: 'Lato';
   font-size: 12px;
   float: right;
+  grid-area: right;
+}
+
+.buttongrid {
+  display: grid;
+  grid-template-columns: repeat(2,90px);
+  grid-template-rows: 90px;
+  row-gap: 10px;
+  column-gap: 10px;
+  max-width: 200px;
+  grid-area: menu;
 }
 
 .userinfo {
-  float: right;
+  float: center;
 }
 
 .carstage {
-  float: left;
-  max-width: 800px;
   opacity: 0.75;
+  align-self: center;
+  grid-area: main;
 }
 
 .clicker {
@@ -132,8 +172,12 @@ h2 {
   text-decoration-color: transparent;
 }
 
+[hidden] {
+	display: none !important;
+}
+
 .modal {
-	height: 100vh;
+	height: 140vh;
 	width: 100vw;
 
 	position: fixed;
