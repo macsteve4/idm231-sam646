@@ -109,81 +109,165 @@ function userPicked(whichOne) {
 	console.log('User picked ' + whichOne);
 	switch (whichOne) {
 		case 'subaru':
-		  	displayObj.src = 'images/wrx.png';
-		  	// display date range
-		  	// display description
+			// displayObj.src = 'img/ful_scorpio.png';
+			zDisplayObj.src = 'images/jag.png';
+			// display title
+			zTitleObj.innerHTML = 'Jaguar XJ6';
+			// display date range
+			zDateRangeObj.innerHTML = '##-Month to ##-Month';
+			// display description
+			zMoreInfo.innerHTML = '<p>The Jaguar XJ6 mirrors the _ </p>';
+			// Show hide modal
+			modal.hidden = !modal.hidden;
 		  	// play sound
 		  	break;
 		case 'vw':
-		  	displayObj.src = 'images/vw.png';
-		   	// display date range
-		  	// display description
+			// displayObj.src = 'img/ful_scorpio.png';
+			zDisplayObj.src = 'images/jag.png';
+			// display title
+			zTitleObj.innerHTML = 'Jaguar XJ6';
+			// display date range
+			zDateRangeObj.innerHTML = '##-Month to ##-Month';
+			// display description
+			zMoreInfo.innerHTML = '<p>The Jaguar XJ6 mirrors the _ </p>';
+			// Show hide modal
+			modal.hidden = !modal.hidden;
 		  	// play sound
 		  	break;  
 		case 'miata':
-		  	displayObj.src = 'images/miata.png';
-		  	// display date range
-		  	// display description
+			// displayObj.src = 'img/ful_scorpio.png';
+			zDisplayObj.src = 'images/jag.png';
+			// display title
+			zTitleObj.innerHTML = 'Jaguar XJ6';
+			// display date range
+			zDateRangeObj.innerHTML = '##-Month to ##-Month';
+			// display description
+			zMoreInfo.innerHTML = '<p>The Jaguar XJ6 mirrors the _ </p>';
+			// Show hide modal
+			modal.hidden = !modal.hidden;
 		 	// play sound
 		  	break;
 		case 'audi':
-			displayObj.src = 'images/audi.png';
+			// displayObj.src = 'img/ful_scorpio.png';
+			zDisplayObj.src = 'images/jag.png';
+			// display title
+			zTitleObj.innerHTML = 'Jaguar XJ6';
 			// display date range
+			zDateRangeObj.innerHTML = '##-Month to ##-Month';
 			// display description
+			zMoreInfo.innerHTML = '<p>The Jaguar XJ6 mirrors the _ </p>';
+			// Show hide modal
+			modal.hidden = !modal.hidden;
 			// play sound
 			stopAllAudio()
 			audirobj.play();
 			break;
 		case 'jag':
-			displayObj.src = 'images/jag.png';
-			// display date range
-			// display description
-			// play sound
+      		// displayObj.src = 'img/ful_scorpio.png';
+      		zDisplayObj.src = 'images/jag.png';
+      		// display title
+      		zTitleObj.innerHTML = 'Jaguar XJ6';
+      		// display date range
+      		zDateRangeObj.innerHTML = '##-Month to ##-Month';
+      		// display description
+      		zMoreInfo.innerHTML = '<p>The Jaguar XJ6 mirrors the _ </p>';
+      		// Show hide modal
+      		modal.hidden = !modal.hidden;
+      		// play sound
 			stopAllAudio()
 			jagrobj.play();
 			break;
 		case 'jeep':
-			displayObj.src = 'images/jeep.png';
+			// displayObj.src = 'img/ful_scorpio.png';
+			zDisplayObj.src = 'images/jag.png';
+			// display title
+			zTitleObj.innerHTML = 'Jaguar XJ6';
 			// display date range
+			zDateRangeObj.innerHTML = '##-Month to ##-Month';
 			// display description
+			zMoreInfo.innerHTML = '<p>The Jaguar XJ6 mirrors the _ </p>';
+			// Show hide modal
+			modal.hidden = !modal.hidden;
 			// play sound
 			break;
 		case 'marquis':
-			displayObj.src = 'images/marquis.png';
+			// displayObj.src = 'img/ful_scorpio.png';
+			zDisplayObj.src = 'images/jag.png';
+			// display title
+			zTitleObj.innerHTML = 'Jaguar XJ6';
 			// display date range
+			zDateRangeObj.innerHTML = '##-Month to ##-Month';
 			// display description
+			zMoreInfo.innerHTML = '<p>The Jaguar XJ6 mirrors the _ </p>';
+			// Show hide modal
+			modal.hidden = !modal.hidden;
 			// play sound
 			break;
 		case 'toyota':
-			displayObj.src = 'images/toyota.png';
+			// displayObj.src = 'img/ful_scorpio.png';
+			zDisplayObj.src = 'images/jag.png';
+			// display title
+			zTitleObj.innerHTML = 'Jaguar XJ6';
 			// display date range
+			zDateRangeObj.innerHTML = '##-Month to ##-Month';
 			// display description
+			zMoreInfo.innerHTML = '<p>The Jaguar XJ6 mirrors the _ </p>';
+			// Show hide modal
+			modal.hidden = !modal.hidden;
 			// play sound
 			break;
 		case 'volvo':
-			displayObj.src = 'images/volvo.png';
+			// displayObj.src = 'img/ful_scorpio.png';
+			zDisplayObj.src = 'images/jag.png';
+			// display title
+			zTitleObj.innerHTML = 'Jaguar XJ6';
 			// display date range
+			zDateRangeObj.innerHTML = '##-Month to ##-Month';
 			// display description
+			zMoreInfo.innerHTML = '<p>The Volvo mirrors the _ </p>';
+			// Show hide modal
+			modal.hidden = !modal.hidden;
 			// play sound
 			break;
 		case 'merc':
-			displayObj.src = 'images/merc.png';
+			// displayObj.src = 'img/ful_scorpio.png';
+			zDisplayObj.src = 'images/jag.png';
+			// display title
+			zTitleObj.innerHTML = 'Jaguar XJ6';
 			// display date range
+			zDateRangeObj.innerHTML = '##-Month to ##-Month';
 			// display description
+			zMoreInfo.innerHTML = '<p>The Jaguar XJ6 mirrors the _ </p>';
+			// Show hide modal
+			modal.hidden = !modal.hidden;
 			// play sound
 			break;
 		case 'ford':
-			displayObj.src = 'images/ford.png';
+			// displayObj.src = 'img/ful_scorpio.png';
+			zDisplayObj.src = 'images/ford.png';
+			// display title
+			zTitleObj.innerHTML = 'Jaguar XJ6';
 			// display date range
+			zDateRangeObj.innerHTML = '##-Month to ##-Month';
 			// display description
+			zMoreInfo.innerHTML = '<p>The Jaguar XJ6 mirrors the _ </p>';
+			// Show hide modal
+			modal.hidden = !modal.hidden;
 			// play sound
 			stopAllAudio()
 			fordrobj.play();
 			break;
 		case 'honda':
-			displayObj.src = 'images/honda.png';
+			// displayObj.src = 'img/ful_scorpio.png';
+			zDisplayObj.src = 'images/honda.png';
+			// display title
+			zTitleObj.innerHTML = 'Jaguar XJ6';
 			// display date range
+			zDateRangeObj.innerHTML = '##-Month to ##-Month';
 			// display description
+			zMoreInfo.innerHTML = '<p>The Jaguar XJ6 mirrors the _ </p>';
+			// Show hide modal
+			modal.hidden = !modal.hidden;
 			// play sound
 			break;
 
@@ -193,6 +277,12 @@ function userPicked(whichOne) {
 	}
 
 const userSubmitObj = document.getElementById('userSubmit');
+
+// Link modal element/objects to JS
+const zDisplayObj = document.getElementById('zDisplayImg');
+const zTitleObj = document.getElementById('zTitle');
+const zDateRangeObj = document.getElementById('zDateRange');
+const zMoreInfoObj = document.getElementById('zMoreInfo');
 
 userSubmitObj.addEventListener('click', function () {
   console.log('User submit button clicked');
