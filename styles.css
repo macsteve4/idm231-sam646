@@ -134,7 +134,7 @@ h3 {
 }
 
 .subflank {
-  text-align: right;
+  text-align: center;
   font-family: 'Lato';
   font-size: 12px;
   float: right;
@@ -152,11 +152,13 @@ h3 {
 }
 
 .userinfo {
-  float: center;
+  align-self: center;
+  justify-self: center;
 }
 
 .carstage {
   opacity: 0.75;
+  object-fit: cover;
   align-self: center;
   grid-area: main;
 }
